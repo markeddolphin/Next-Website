@@ -25,7 +25,7 @@ jobs:
           FULL_VERSION="${VERSION}.${COUNT}"
           echo "Tagging version: $FULL_VERSION"
           
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "markeddolphin"
+          git config user.email "lacosby.milli@gmail.com"
           git tag -a "$FULL_VERSION" -m "Auto tag from dev->main merge"
           git push origin "$FULL_VERSION"
